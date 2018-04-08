@@ -1,6 +1,10 @@
 #!/bin/bash
 #transfer files from office to home
 
+ACID = 192.168.0.43
+BITCHEZ = 192.168.0.15
+PRISHTINA = 192.168.0.124
+
 echo "YOYOYO, TODAY U DID A GREAT JOB MOFO!"
 echo "DON'T FORGET TO TRANSFER YOUR SHIT!"
 
@@ -21,9 +25,6 @@ read sureInput
 
 if(($sureInput == 'y'))
 then
-ACID = 192.168.0.43
-BITCHEZ = 192.168.0.15
-PRISHTINA = 192.168.0.124
 echo ""
 echo "1. " $ACID
 echo "2. " $BITCHEZ
