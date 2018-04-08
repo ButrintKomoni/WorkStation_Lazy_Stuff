@@ -1,7 +1,9 @@
 #!/bin/bash
 while /bin/true; do
     if ! [ "$(ping -c 1 google.com)" ]; then
-        echo "Warning: connection lost at $(date) -- restart"  
+        echo "Warning: connection lost at $(date) -- restart" 
+        $(notify-send "Warning connection lost at : $(date) --restart")
+        aplay notify.wav
         nmcli nm wifi off
         sleep 3
         nmcli nm wifi on
